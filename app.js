@@ -32,7 +32,7 @@ function actualizarLista() {
 function sortearAmigo() {
     if (amigos.length === 0) {
         let resultadoVacio = document.getElementById('resultado');
-        resultadoVacio.innerHTML = 'ya se han sorteado todos los amigos'
+        resultadoVacio.innerHTML = 'Ya se han sorteado todos los nombres.'
     } else if (amigos.length == amigos.length) {
         let amigoSorteado = Math.floor(Math.random()*amigos.length);
         nombreAmigo = amigos[amigoSorteado];
