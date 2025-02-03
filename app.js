@@ -1,5 +1,6 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
-//creacion array
+
+//Variables
 let amigos = []
 let nombreAmigo = 0
 
@@ -39,6 +40,8 @@ function sortearAmigo() {
         nombreAmigo = amigos[amigoSorteado];
         let resultado = document.getElementById('resultado');
         resultado.innerHTML = `${nombreAmigo}`;
+        console.log(amigoSorteado);
+        console.log(nombreAmigo);
     }
     amigos.splice(nombreAmigo,1);
     actualizarLista();
