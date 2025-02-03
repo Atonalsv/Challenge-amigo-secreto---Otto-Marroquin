@@ -1,6 +1,7 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 //creacion array
 let amigos = []
+let nombreAmigo = 0
 
 //funcion que agrega amigos al array > muestra alerta > remueve valor del input
 function agregarAmigo() {
