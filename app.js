@@ -15,6 +15,7 @@ function agregarAmigo() {
     console.log(amigos);
     return
 }
+
 //funcion que actualiza amigos
 function actualizarLista() {
     let lista = document.getElementById('listaAmigos');
@@ -25,4 +26,19 @@ function actualizarLista() {
         lista.appendChild(li);
     }
     return
+}
+
+//funcion para sortear amigos
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        let resultadoVacio = document.getElementById('resultado');
+        resultadoVacio.innerHTML = 'ya se han sorteado todos los amigos'
+    } else if (amigos.length == amigos.length) {
+        let amigoSorteado = Math.floor(Math.random()*amigos.length);
+        nombreAmigo = amigos[amigoSorteado];
+        let resultado = document.getElementById('resultado');
+        resultado.innerHTML = `${nombreAmigo}`;
+    }
+    actualizarLista();
+    return;
 }
