@@ -39,6 +39,7 @@ function sortearAmigo() {
         let resultado = document.getElementById('resultado');
         resultado.innerHTML = `${nombreAmigo}`;
     }
+    amigos.splice(nombreAmigo,1);
     actualizarLista();
     return;
 }
